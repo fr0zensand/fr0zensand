@@ -1,4 +1,4 @@
-- Hi, This is @fr0zensand
+- Hi, This is Fr0zenSand
 - Buy me a coffee:
     (BTC: bc1q8jckje3rj8lkl0gzcx658aj8jyyremkdg4dr77)
 
