@@ -1,0 +1,70 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+import re
+f_name = input('your document name: ')
+py_doc = open(f_name,'r').read()
+
+def encryption(py_doc):
+    py_doc = re.sub('a','==31=',py_doc)
+    py_doc = re.sub('b','==45=',py_doc)
+    py_doc = re.sub('c','==14=',py_doc)
+    py_doc = re.sub('d','==47=',py_doc)
+    py_doc = re.sub('e','==18=',py_doc)
+    py_doc = re.sub('f','==41=',py_doc)
+    py_doc = re.sub('g','==00=',py_doc)
+    py_doc = re.sub('h','==24=',py_doc)
+    py_doc = re.sub('i','==67=',py_doc)
+    py_doc = re.sub('j','==52=',py_doc)
+    py_doc = re.sub('k','==23=',py_doc)
+    py_doc = re.sub('l','==20=',py_doc)
+    py_doc = re.sub('m','==77=',py_doc)
+    py_doc = re.sub('n','==85=',py_doc)
+    py_doc = re.sub('o','==46=',py_doc)
+    py_doc = re.sub('p','==84=',py_doc)
+    py_doc = re.sub('q','==64=',py_doc)
+    py_doc = re.sub('r','==98=',py_doc)
+    py_doc = re.sub('s','==08=',py_doc)
+    py_doc = re.sub('t','==92=',py_doc)
+    py_doc = re.sub('u','==33=',py_doc)
+    py_doc = re.sub('v','==10=',py_doc)
+    py_doc = re.sub('w','==11=',py_doc)
+    py_doc = re.sub('x','==97=',py_doc)
+    py_doc = re.sub('y','==80=',py_doc)
+    py_doc = re.sub('z','==42=',py_doc)
+    py_doc = re.sub('A','==07=',py_doc)
+    py_doc = re.sub('B','==19=',py_doc)
+    py_doc = re.sub('C','==78=',py_doc)
+    py_doc = re.sub('D','==96=',py_doc)
+    py_doc = re.sub('E','==94=',py_doc)
+    py_doc = re.sub('F','==28=',py_doc)
+    py_doc = re.sub('G','==25=',py_doc)
+    py_doc = re.sub('H','==61=',py_doc)
+    py_doc = re.sub('I','==95=',py_doc)
+    py_doc = re.sub('J','==91=',py_doc)
+    py_doc = re.sub('K','==65=',py_doc)
+    py_doc = re.sub('L','==89=',py_doc)
+    py_doc = re.sub('M','==30=',py_doc)
+    py_doc = re.sub('N','==88=',py_doc)
+    py_doc = re.sub('O','==57=',py_doc)
+    py_doc = re.sub('P','==39=',py_doc)
+    py_doc = re.sub('Q','==02=',py_doc)
+    py_doc = re.sub('R','==83=',py_doc)
+    py_doc = re.sub('S','==15=',py_doc)
+    py_doc = re.sub('T','==60=',py_doc)
+    py_doc = re.sub('U','==03=',py_doc)
+    py_doc = re.sub('V','==59=',py_doc)
+    py_doc = re.sub('W','==71=',py_doc)
+    py_doc = re.sub('X','==50=',py_doc)
+    py_doc = re.sub('Y','==66=',py_doc)
+    py_doc = re.sub('Z','==05=',py_doc)
+    
+
+    return py_doc
+    
+if __name__ == '__main__':
+#    n = input('number of encryption: ')
+#    for i in range(2):
+    py_doc = encryption(py_doc)
+    print(py_doc,file = open('crpt_'+f_name,'w'))
+
